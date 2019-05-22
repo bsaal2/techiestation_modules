@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="techiestation.list">
+      <field name="name">techiestation list</field>
+      <field name="model">techiestation.techiestation</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="techiestation.action_window">
+      <field name="name">techiestation window</field>
+      <field name="res_model">techiestation.techiestation</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="techiestation.action_server">
+      <field name="name">techiestation server</field>
+      <field name="model_id" ref="model_techiestation_techiestation"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="techiestation" id="techiestation.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="techiestation.menu_1" parent="techiestation.menu_root"/>
+    <menuitem name="Menu 2" id="techiestation.menu_2" parent="techiestation.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="techiestation.menu_1_list" parent="techiestation.menu_1"
+              action="techiestation.action_window"/>
+    <menuitem name="Server to list" id="techiestation" parent="techiestation.menu_2"
+              action="techiestation.action_server"/>
+    -->
+  </data>
+</odoo>

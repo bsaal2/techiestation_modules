@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="view_t_posts_list">
+      <field name="name">t.posts.list</field>
+      <field name="model">t.posts</field>
+      <field name="arch" type="xml">
+        <tree string="Posts">
+          <field name="name" />
+          <field name="title" />
+          <field name="category" />
+          <field name="is_slider"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_t_posts_form" model="ir.ui.view">
+        <field name="name">t.posts.form</field>
+        <field name="model">t.posts</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Posts">
+                <sheet>
+                    <field name="thumbnail" widget="image" class="oe_avatar" options='{"preview_image": "thumbnail" }' />
+                    <group colspan="4" cols="4">
+                        <field name="name" required="1" />
+                        <field name="title" required="1" />
+                        <field name="category" required="1" />
+                        <field name="is_slider" />
+                        <field name="slider_image" widget="image" options='{"preview_image": "slider_image" }' attrs="{'invisible' : [('is_slider','=',False)], 'required' : [('is_slider','=',True)] }" />
+                        <field name="slider_summary" attrs="{'invisible' : [('is_slider','=',False)], 'required' : [('is_slider','=',True)] }" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="act_t_posts_action_window">
+      <field name="name">Posts</field>
+      <field name="res_model">t.posts</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    
+  </data>
+</odoo>

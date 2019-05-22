@@ -1,0 +1,167 @@
+<odoo>
+    <data>
+        <template id="design">
+            <t t-call="website.layout">
+                <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/439/vibrant-saturated-color-schemes.png&quot;); background-position: 50% 0px;"/>
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 s_title" data-name="Title">
+                        <h1 class="s_title_thin" style="font-size: 62px; text-align: center;">Design Technology</h1>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="pt32 pb0 bg-white oe_custom_bg" style="">
+                  <div class="container">
+                    <div class="row s_nb_column_fixed">
+                      <div class="col-lg-12 s_title pt16 pb0" style="text-align: center;">
+                        <h1 class="s_title_default" style="text-align: left; ">
+                          <font style="color: rgb(0, 0, 0); font-size: 24px;">
+                            <b>Design</b>
+                          </font>
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg">
+                  <div class="container">
+                    <div class="row d-flex align-items-stretch">
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/575/dynamic-gradients.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Dynamic Gradients</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_103 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="103" data-gr-id="103">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/569/mobile-frist.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Mobile First</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_104 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="104" data-gr-id="104">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/573/custom-illustrations.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Custom Illustration</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_105 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="105" data-gr-id="105">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg">
+                  <div class="container">
+                    <div class="row d-flex align-items-stretch">
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/575/dynamic-gradients.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Dynamic Gradients</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_103 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="103" data-gr-id="103">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/569/mobile-frist.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Mobile First</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_104 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="104" data-gr-id="104">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/573/custom-illustrations.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Custom Illustration</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_105 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="105" data-gr-id="105">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg">
+                  <div class="container">
+                    <div class="row d-flex align-items-stretch">
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/575/dynamic-gradients.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Dynamic Gradients</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_103 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="103" data-gr-id="103">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/569/mobile-frist.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Mobile First</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_104 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="104" data-gr-id="104">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="s_col_no_bgcolor pt16 pb16  col-lg-4">
+                        <div class="card bg-white">
+                          <img class="card-img-top" src="/web/image/573/custom-illustrations.png" alt="Odoo - Sample 1 for three columns" data-original-title="" title="" aria-describedby="tooltip51399"/>
+                          <div class="card-body">
+                            <h3 class="card-title">Custom Illustration</h3>
+                            <p>
+                              <font style="font-size: 11px;">10th August 2015</font>
+                            </p>
+                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit <g class="gr_ gr_105 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="105" data-gr-id="105">you</g> design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                          </div>
+                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            
+            </t>
+        </template>
+    </data>
+</odoo>

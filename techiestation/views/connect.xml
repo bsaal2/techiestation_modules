@@ -1,0 +1,95 @@
+<odoo>
+    <data>
+        <template id="connect">
+            <t t-call="website.layout">
+                <section id="contact" class="s_contact_us_one_page_bg_map mb128 footer1 oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/503/contact-bg.jpg&quot;);">
+                    <div class="container">
+                    <div class="row contact-container">
+                        <div class="col-lg-12">
+                        <div class="card card-shadow aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="row">
+                            <div class="col-lg-8">
+                                <div class="contact-box p-40">
+                                <h3 class="title font-bold">
+                                    <font style="font-size: 36px;">Contact Us</font>
+                                </h3>
+                                <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form contact-form form-horizontal col-md-12" enctype="multipart/form-data" data-editable-form="false">
+                                    <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group m-t-20">
+                                        <input id="name" placeholder="Name" name="contact_name" required="True" type="text" class="o_website_form_input form-control" value=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group m-t-20">
+                                        <input id="email" name="email_from" placeholder="Email" required="" value="" type="email" class="o_website_form_input form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group m-t-20">
+                                        <input id="phone" name="phone" placeholder="Phone" type="text" class="o_website_form_input form-control" value=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group m-t-20">
+                                        <input id="subject" name="name" placeholder="Subject" type="text" class="o_website_form_input form-control" value=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group m-t-20">
+                                        <textarea id="messagge" name="description" placeholder="Messagge" class=" o_website_form_input form-control" value=""/>
+                                        <div class="reserve-submit mt-40">
+                                                                                </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                        <button class="o_website_form_send btn btn-danger-gradiant btn-md m-t-20 btn-arrow" type="submit">
+                                            <span>
+                                                                                        SUBMIT NOW
+                                                                                        <i class="lnr lnr-arrow-right"/>
+                                                                                    </span>
+                                        </button>
+                                        <span id="o_website_form_result" class="text-danger ml8 mt16  mb16 col-md-12"/>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                            <section class="col-lg-4 bg-image oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/505/contact-right-bg.jpg&quot;);">
+                                <div class="detail-box">
+                                <h5 class="text-white font-light m-b-30">ADDRESS</h5>
+                                <p class="text-white op-7">
+                                                                    A-405 Pushp Business Campus
+                                                                    <br/>
+                                                                    Ahmedabad
+                                                                </p>
+                                <h5 class="text-white font-light m-b-30 m-t-40">CALL US</h5>
+                                <p class="text-white op-7">
+                                                                    451 876 3642
+                                                                    <br/>
+                                                                    549 457 8541
+                                                                </p>
+                                <div class="round-social light">
+                                    <a href="#" class="m-l-0">
+                                    <i class="fa fa-facebook"/>
+                                    </a>
+                                    <a href="#">
+                                    <i class="fa fa-twitter"/>
+                                    </a>
+                                    <a href="#">
+                                    <i class="fa fa-youtube-play"/>
+                                    </a>
+                                </div>
+                                </div>
+                            </section>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+            </t>
+        </template>
+    </data>
+</odoo>

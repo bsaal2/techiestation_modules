@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <menuitem id="techiestation_menu_root" name="TechieStation" sequence="10"/>
+        
+
+        <!-- Main Menus -->
+        <menuitem id="main_menu_t_posts" name="Posts" parent="techiestation_menu_root" action="act_t_posts_action_window" sequence="10" />
+        <menuitem id="main_menu_t_category" name="Category" parent="techiestation_menu_root" action="act_t_category_action_window" sequence="11" />
+        
+            
+    </data>
+</odoo>
