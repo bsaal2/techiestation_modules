@@ -31,13 +31,15 @@
                       <t t-foreach="mobilelist" t-as="mobile">
                           <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
                             <div class="card bg-white">
-                              <img class="card-img-top" src="/web/image/494/xiaomi-pocophone.jpg" alt=""/>
+                              <a t-attf-href="/detail/{{ slug(mobile) }}">
+                                <img class="card-img-top" t-att-src="'data:image/png;base64,%s' % to_text(mobile.thumbnail)" t-att-alt="mobile.name"/>
+                              </a>
                               <div class="card-body">
                                 <h3 class="card-title"><t t-esc="mobile.title" /></h3>
                                 <p>
                                   <font style="font-size: 11px;"><span t-field="mobile.create_date" t-options="{&quot;format&quot;: &quot;dd/MM/yy&quot;}" /></font>
                                 </p>
-                                <p class="card-text"><t t-raw="mobile.description" /></p>
+                                <p class="card-text"><t t-raw="mobile.sub_description" /></p>
                               </div>
                               <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp; &amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
                             </div>
@@ -46,96 +48,6 @@
                     </div>
                   </div>
                 </section>
-                <!-- <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg">
-                  <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/494/xiaomi-pocophone.jpg" alt="Odoo - Sample 1 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Xiaomi Pocophone F1</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">Also known as Poco. It is powered with corning gorilla glass of display type IPS LCD capacitive touchscreen. It is the most popular phone because of its high capacity memory and <g class="gr_ gr_139 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation multiReplace" id="139" data-gr-id="139">..</g></p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp; &amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/496/samsung-bent-screen.jpg" alt="Odoo - Sample 2 for three columns" data-original-title="" title="" aria-describedby="tooltip970860"/>
-                          <div class="card-body">
-                            <h3 class="card-title" style="text-align: left;">Galaxy S9 | S9+</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">The best part of this phone is it's a camera. It has a revolutionary camera that adapts like the human eye. It captures the stunning picture in the bright daylight and super low light.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/501/mate10.jpg" alt="Odoo - Sample 3 for three columns" data-original-title="" title="" aria-describedby="tooltip271947"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Huawei Mate 10</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">Huwaei has shaken things up for the 2017 and it's no overstatement to say it's one of the best looking <g class="gr_ gr_138 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="138" data-gr-id="138">phone</g> around. It's <g class="gr_ gr_141 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="141" data-gr-id="141">on</g> of the most powerful and long-lasting phone.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg">
-                  <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/494/xiaomi-pocophone.jpg" alt="Odoo - Sample 1 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Xiaomi Pocophone F1</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">Also known as Poco. It is powered with corning gorilla glass of display type IPS LCD capacitive touchscreen. It is the most popular phone because of its high capacity memory and <g class="gr_ gr_139 gr-alert gr_gramm gr_inline_cards gr_run_anim Punctuation multiReplace" id="139" data-gr-id="139">..</g></p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp; &amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/496/samsung-bent-screen.jpg" alt="Odoo - Sample 2 for three columns" data-original-title="" title="" aria-describedby="tooltip970860"/>
-                          <div class="card-body">
-                            <h3 class="card-title" style="text-align: left;">Galaxy S9 | S9+</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">The best part of this phone is it's a camera. It has a revolutionary camera that adapts like the human eye. It captures the stunning picture in the bright daylight and super low light.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/501/mate10.jpg" alt="Odoo - Sample 3 for three columns" data-original-title="" title="" aria-describedby="tooltip271947"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Huawei Mate 10</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text">Huwaei has shaken things up for the 2017 and it's no overstatement to say it's one of the best looking <g class="gr_ gr_138 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="138" data-gr-id="138">phone</g> around. It's <g class="gr_ gr_141 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="141" data-gr-id="141">on</g> of the most powerful and long-lasting phone.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section> -->
               
             </t>
         </template>

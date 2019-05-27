@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_category,access_category,model_t_category,,1,1,1,1
 access_posts,access_posts,model_t_posts,,1,1,1,1
+access_tags,access_tags,model_t_tag,,1,1,1,1

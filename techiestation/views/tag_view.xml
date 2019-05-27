@@ -1,0 +1,44 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="view_t_tag_list">
+      <field name="name">t.tag.list</field>
+      <field name="model">t.tag</field>
+      <field name="arch" type="xml">
+        <tree string="Tag">
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_t_tag_form" model="ir.ui.view">
+        <field name="name">t.tag.form</field>
+        <field name="model">t.tag</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Tag">
+                <sheet>
+                    <group colspan="4">
+                        <field name="name" required="1" />
+                        <field name="description"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="act_t_tag_action_window">
+      <field name="name">Tag</field>
+      <field name="res_model">t.tag</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    
+  </data>
+</odoo>

@@ -28,140 +28,24 @@
                 <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg" style="">
                   <div class="container">
                     <div class="row d-flex align-items-stretch">
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/551/asus-zenpad.jpg" alt="Odoo - Sample 1 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Asus Zenpad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                      <t t-foreach="tabletlist" t-as="tablet">
+                        <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                          <div class="card bg-white">
+                            <img class="card-img-top" t-att-src="'data:image/png;base64,%s' % to_text(tablet.thumbnail)" t-att-alt="tablet.name" />
+                            <div class="card-body">
+                              <h3 class="card-title"><t t-esc="tablet.title" /></h3>
+                              <p>
+                                <font style="font-size: 11px;"><span t-field="tablet.create_date" t-options="{&quot;format&quot;: &quot;dd/MM/yy&quot;}" /></font>
+                              </p>
+                              <p class="card-text o_default_snippet_text"><t t-raw="tablet.sub_description" /></p>
+                            </div>
+                            <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
                           </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/553/huawei-mediapad.jpg" alt="Odoo - Sample 2 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Huawei Mediapad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the <g class="gr_ gr_119 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="119" data-gr-id="119">column</g> to create a new one as a copy.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/555/amazon-fire-hd.jpg" alt="Odoo - Sample 3 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Amazon Fire HD</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="121" data-gr-id="121">it's</g> <em class="o_default_snippet_text">rounded corner</em> style.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
+                      </t>
                     </div>
                   </div>
                 </section>
-                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg" style="">
-                  <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/551/asus-zenpad.jpg" alt="Odoo - Sample 1 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Asus Zenpad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/553/huawei-mediapad.jpg" alt="Odoo - Sample 2 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Huawei Mediapad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the <g class="gr_ gr_119 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="119" data-gr-id="119">column</g> to create a new one as a copy.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/555/amazon-fire-hd.jpg" alt="Odoo - Sample 3 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Amazon Fire HD</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="121" data-gr-id="121">it's</g> <em class="o_default_snippet_text">rounded corner</em> style.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="s_three_columns pt32 pb32 bg-white oe_custom_bg" style="">
-                  <div class="container">
-                    <div class="row d-flex align-items-stretch">
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/551/asus-zenpad.jpg" alt="Odoo - Sample 1 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Asus Zenpad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/553/huawei-mediapad.jpg" alt="Odoo - Sample 2 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Huawei Mediapad</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the <g class="gr_ gr_119 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="119" data-gr-id="119">column</g> to create a new one as a copy.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                        <div class="card bg-white">
-                          <img class="card-img-top" src="/web/image/555/amazon-fire-hd.jpg" alt="Odoo - Sample 3 for three columns"/>
-                          <div class="card-body">
-                            <h3 class="card-title">Amazon Fire HD</h3>
-                            <p>
-                              <font style="font-size: 11px;">10th August 2015</font>
-                            </p>
-                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="121" data-gr-id="121">it's</g> <em class="o_default_snippet_text">rounded corner</em> style.</p>
-                          </div>
-                          <div class="card-footer"><span class="fa fa-share-alt-square mr-1" style=""/><b>5</b>&amp;nbsp;shares&amp;nbsp;&amp;nbsp;<span class="fa fa-commenting mr-1" style=""/><b>5</b> comments&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-      
-                
             </t>
         </template>
     </data>

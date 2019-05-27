@@ -26,8 +26,6 @@
         'security/ir.model.access.csv',
         # 'views/templates.xml',
         'views/assets.xml',
-        'views/category_view.xml',
-        'views/menu.xml',
         'views/home.xml',
         'views/mobile.xml',
         'views/tablet.xml',
@@ -39,5 +37,10 @@
 
         # Backend Views
         'views/posts_view.xml',
+        'views/category_view.xml',
+        'views/tag_view.xml',
+
+        # Menu
+        'views/menu.xml',
     ],
 }

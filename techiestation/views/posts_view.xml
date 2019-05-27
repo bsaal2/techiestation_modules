@@ -7,9 +7,11 @@
       <field name="arch" type="xml">
         <tree string="Posts">
           <field name="name" />
+          <field name="thumbnail" widget="image"  height="50" />
           <field name="title" />
           <field name="category" />
           <field name="is_slider"/>
+          <field name="tag_id" />
         </tree>
       </field>
     </record>
@@ -26,10 +28,13 @@
                         <field name="name" required="1" />
                         <field name="title" required="1" />
                         <field name="category" required="1" />
+                        <field name="tag_id" required="1" />
                         <field name="is_slider" />
+                        <field name="slider_active" attrs="{'invisible' : [('is_slider','=',False)]}" />
                         <field name="slider_image" widget="image" options='{"preview_image": "slider_image" }' attrs="{'invisible' : [('is_slider','=',False)], 'required' : [('is_slider','=',True)] }" />
                         <field name="slider_summary" attrs="{'invisible' : [('is_slider','=',False)], 'required' : [('is_slider','=',True)] }" />
                         <field name="description" />
+                        <field name="sub_description" />
                     </group>
                 </sheet>
                 <div class="oe_chatter">
